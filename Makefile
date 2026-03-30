@@ -8,7 +8,7 @@ INCDIR = heads
 BUILDDIR = build
 
 # Flags
-CFLAGS = -O2 -Wall -Wextra -I$(INCDIR)
+CFLAGS = -Wall -Wextra -I$(INCDIR)
 #LDFLAGS = - Library Flags If any
 
 # Find all .c files recursively inside src/ (including subfolders)
