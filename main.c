@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "general/calc.h"
 
 int doLameIntro();
 
 int main(void){
-   printf("Hola Goobers");
+   printf("Hola Goobers\n");
   
    if (doLameIntro() == 1) {
      float tableOf;
@@ -17,6 +16,7 @@ int main(void){
      printf("\n Table Upto: ");
      scanf("%d", &tableUpto);
       
+     createTable(&tableOf, &tableUpto);
    }
 
    return 0;
@@ -30,8 +30,7 @@ int doLameIntro(){
    scanf("%c", &c);
 
    if (c == 'Y' || c == 'y') {
-     printf("Mhm Good Choice\n");
-      
+     printf("Mhm....Good Choice\n");
      return 1;
 
    }
@@ -40,6 +39,7 @@ int doLameIntro(){
       return 0;
    }
    else {
-      printf("Whatchu Talking About?");
+      printf("\nWhatchu Talking About?\n");
    }
+   return 0;
 }
