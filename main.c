@@ -16,7 +16,7 @@ int main(void){
      printf("\n Table Upto: ");
      scanf("%d", &tableUpto);
       
-     createTable(&tableOf, &tableUpto);
+     createTable(tableOf, tableUpto);
    }
 
    return 0;
